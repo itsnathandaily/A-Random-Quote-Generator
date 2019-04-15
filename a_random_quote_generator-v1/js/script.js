@@ -7,38 +7,40 @@ project 1 - A Random Quote Generator
 
 
 
-var quote1 ={
-  quote: "Let us sacrifice our today so that our children can have a better tomorrow.",
-  source: "A. P. J. Abdul Kalam",
-  citation: "",
-  year: ""
-};
-var quote2 = {
-  quote: "quote 2",
-  source: "julius anybody",
-  citation: "19",
-  year: "1976"
-};
-var quote3 = {
-  quote: "quote 3",
-  source: "julius anybody",
-  citation: "",
-  year: ""
-};
 
-var quote4= {
-  quote: "quote 4",
-  source: "julius anybody",
-  citation: "",
-  year :""
-};
-var quote5= {
-  quote: "quote 5",
-  source: "julius anybody",
-  citation: "",
-  year :""
-};
-var quotes = [quote1,quote2,quote3,quote4,quote5];
+var quotes = [
+  
+  {
+    quote: "Let us sacrifice our today so that our children can have a better tomorrow.",
+    source: "A. P. J. Abdul Kalam",
+    citation: "https://www.brainyquote.com/authors/a_p_j_abdul_kalam",
+    year: ""
+  },
+  {
+    quote: "The scariest moment is always just before you start.",
+    source: "Stephen King",
+    citation: "http://wisdomquotes.com/inspirational-quotes/",
+    year: "2012"
+  },
+  {
+    quote: "Think Big And Don’t Listen To People Who Tell You It Can’t Be Done. Life’s Too Short To Think Small.",
+  source: "Tim Ferriss",
+  citation: "Instagram",
+  year: ""
+
+  },
+  {
+    quote: "We become what we think about",
+    source: "Earl Nightingale",
+    citation: "",
+    year :""
+  },
+  {
+    quote: "Those who dare to fail miserably can achieve greatly.",
+    source: "John F.Kennedy",
+    citation: "President John F.Kennedy's Inaugural Address",
+    year :"1960"
+  }];
 //console.log(quotes);
 
 
@@ -56,7 +58,7 @@ function getRandomQuote(){
 
 function printQuote(){
   var randomQuote = getRandomQuote();
-console.log(randomQuote);
+//console.log(randomQuote);
 var htmlString = "";
 htmlString += "<p class=\"quote\">"+randomQuote.quote+"</p>"+"<br> ";
 htmlString+= "<p class=\"source\">"+randomQuote.source;
@@ -73,5 +75,3 @@ document.getElementById('quote-box').innerHTML = htmlString;
 
 
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
-
-
