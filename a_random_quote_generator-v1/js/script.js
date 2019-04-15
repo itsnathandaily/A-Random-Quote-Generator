@@ -10,33 +10,33 @@ project 1 - A Random Quote Generator
 var quote1 ={
   quote: "Let us sacrifice our today so that our children can have a better tomorrow.",
   source: "A. P. J. Abdul Kalam",
-  citation: "https://www.brainyquote.com/authors/a_p_j_abdul_kalam",
+  citation: "",
   year: ""
 };
 var quote2 = {
-  quote: "The scariest moment is always just before you start.",
-  source: "Stephen King",
-  citation: "http://wisdomquotes.com/inspirational-quotes/",
-  year: "2012"
+  quote: "quote 2",
+  source: "julius anybody",
+  citation: "19",
+  year: "1976"
 };
 var quote3 = {
-  quote: "Think Big And Don’t Listen To People Who Tell You It Can’t Be Done. Life’s Too Short To Think Small.",
-  source: "Tim Ferriss",
-  citation: "Instagram",
+  quote: "quote 3",
+  source: "julius anybody",
+  citation: "",
   year: ""
 };
 
 var quote4= {
-  quote: "We become what we think about",
-  source: "Earl Nightingale",
+  quote: "quote 4",
+  source: "julius anybody",
   citation: "",
   year :""
 };
 var quote5= {
-  quote: "Those who dare to fail miserably can achieve greatly.",
-  source: "John F.Kennedy",
-  citation: "President John F.Kennedy's Inaugural Address",
-  year :"1960"
+  quote: "quote 5",
+  source: "julius anybody",
+  citation: "",
+  year :""
 };
 var quotes = [quote1,quote2,quote3,quote4,quote5];
 //console.log(quotes);
