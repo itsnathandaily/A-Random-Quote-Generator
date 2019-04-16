@@ -7,7 +7,7 @@ project 1 - A Random Quote Generator
 
 
 
-
+//array of 5 quote objects
 var quotes = [
   
   {
@@ -45,7 +45,7 @@ var quotes = [
 
 
 
-
+//this function randomly selects a quote from the array of quote objects
 
 function getRandomQuote(){
  let randomNumber = Math.floor(Math.random() * Math.floor(quotes.length));
@@ -55,21 +55,31 @@ function getRandomQuote(){
 
 
 
-
+// this function appends the quote to an html string template
+// the string sits in variable htmlString
 function printQuote(){
   var randomQuote = getRandomQuote();
 //console.log(randomQuote);
+
+//htmlString is always empty at first
 var htmlString = "";
+//then it gets appended with html and the quote and source within the quote object
 htmlString += "<p class=\"quote\">"+randomQuote.quote+"</p>"+"<br> ";
 htmlString+= "<p class=\"source\">"+randomQuote.source;
+
+//if there is a citation in the quote object, append it to htmlString
 if(randomQuote.citation!==""){
 htmlString+= "<span class=\"citation\">"+randomQuote.citation+"</span>";
 }
+
+//if there is a year in the quote object, append it to htmlString
 if(randomQuote.year!==""){
   htmlString+= "<span class=\"year\">"+randomQuote.year+"</span>";
 }
-
+//close the html template with the closing paragraph tag
 htmlString +="</p>";
+
+//display htmlString in the 'quote-box' element
 document.getElementById('quote-box').innerHTML = htmlString;
 }
 
